@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic Planner and Interactive Task Management System - COS 106 Term Project, MIVA Open University." />
+  <meta name="author" content="Momoh" />
+  <title>Academic Planner | Student Portfolio &amp; Management Platform</title>
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/miva-logo.svg" />
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="MIVA Open University Portfolio Home">
+        <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" class="nav-brand-img" width="180" height="44" />
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link active" aria-current="page">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="site-main" id="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <header class="section-header">
+        <span class="section-badge">Student Task Management</span>
+        <h1>Academic Planner</h1>
+        <p class="section-subtitle">
+          Organize coursework, track project milestones, and maintain academic productivity in real time.
+        </p>
+      </header>
+
+      <!-- Statistical Overview Widgets (Dynamic via JavaScript) -->
+      <section class="planner-stats-row" aria-label="Academic Task Statistics">
+        <div class="stat-widget">
+          <div class="stat-widget-icon icon-blue">📋</div>
+          <div class="stat-widget-info">
+            <h4 id="totalTasksCount">0</h4>
+            <p>Total Tasks</p>
+          </div>
+        </div>
+
+        <div class="stat-widget">
+          <div class="stat-widget-icon icon-green">✅</div>
+          <div class="stat-widget-info">
+            <h4 id="completedTasksCount">0</h4>
+            <p>Completed</p>
+          </div>
+        </div>
+
+        <div class="stat-widget">
+          <div class="stat-widget-icon icon-amber">⏳</div>
+          <div class="stat-widget-info">
+            <h4 id="pendingTasksCount">0</h4>
+            <p>Pending</p>
+          </div>
+        </div>
+
+        <div class="stat-widget">
+          <div class="stat-widget-icon icon-teal">📈</div>
+          <div class="stat-widget-info">
+            <h4 id="completionRate">0%</h4>
+            <p>Completion Rate</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planner Main Two-Column Layout -->
+      <div class="planner-layout">
+        
+        <!-- Left Column: Add Task Form -->
+        <aside class="card task-form-card" aria-label="Add New Academic Task">
+          <h3 style="margin-bottom: 0.35rem;">➕ Add Academic Task</h3>
+          <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+            Schedule a new university assignment, reading, or lab deliverable.
+          </p>
+
+          <form id="taskForm" novalidate>
+            <div class="form-group">
+              <label for="taskTitle">Task Title / Description *</label>
+              <input 
+                type="text" 
+                id="taskTitle" 
+                class="form-control" 
+                placeholder="e.g. Submit COS 106 Term Project" 
+                required 
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="taskCourse">Course Code</label>
+                <input 
+                  type="text" 
+                  id="taskCourse" 
+                  class="form-control" 
+                  placeholder="e.g. COS 106" 
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="taskPriority">Priority Level</label>
+                <select id="taskPriority" class="form-control">
+                  <option value="high">🔴 High</option>
+                  <option value="medium" selected>🟡 Medium</option>
+                  <option value="low">🟢 Low</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="taskDueDate">Target Due Date</label>
+              <input 
+                type="date" 
+                id="taskDueDate" 
+                class="form-control" 
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Save Task to Planner
+            </button>
+          </form>
+        </aside>
+
+        <!-- Right Column: Interactive Task List -->
+        <section class="card" aria-label="Active Academic Task List">
+          
+          <!-- Controls Bar with Filter Tabs -->
+          <div class="task-controls-bar">
+            <h3 style="margin: 0; font-size: 1.25rem;">Your Academic Schedule</h3>
+            
+            <div class="task-filter-tabs" role="tablist" aria-label="Task Filters">
+              <button type="button" class="tab-btn active" data-filter="all" role="tab" aria-selected="true">All Tasks</button>
+              <button type="button" class="tab-btn" data-filter="pending" role="tab" aria-selected="false">Pending</button>
+              <button type="button" class="tab-btn" data-filter="completed" role="tab" aria-selected="false">Completed</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Task List Container -->
+          <ul class="task-list" id="taskList" aria-live="polite">
+            <!-- Populated dynamically via JavaScript in js/planner.js -->
+          </ul>
+
+          <!-- Placeholder when no tasks match filter -->
+          <div class="empty-task-placeholder" id="emptyPlaceholder" style="display: none;">
+            <span>🎉</span>
+            <h4>No Tasks Found</h4>
+            <p>You have no scheduled tasks in this category. Use the form on the left to add one!</p>
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" style="filter: brightness(0) invert(1); height: 38px; margin-bottom: 1rem;" />
+          <p>
+            COS 106: Introduction to Web Technologies Practical Term Project. 
+            Designed and developed as a responsive student academic portfolio and management system.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Course Information</h4>
+          <p style="font-size: 0.9rem; line-height: 1.8;">
+            <strong>Course:</strong> COS 106<br />
+            <strong>Institution:</strong> MIVA Open University<br />
+            <strong>Term:</strong> 2025/2026 Academic Session<br />
+            <strong>Location:</strong> Abuja, Nigeria
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> <strong>Momoh</strong> • MIVA Open University. All Rights Reserved. Built for COS 106 Term Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

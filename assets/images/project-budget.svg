@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <linearGradient id="projBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2027"/>
+      <stop offset="50%" stop-color="#203A43"/>
+      <stop offset="100%" stop-color="#2C5364"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#projBg4)"/>
+  <rect width="600" height="42" rx="16" fill="#0A161B"/>
+  <circle cx="25" cy="21" r="6" fill="#FF5F56"/>
+  <circle cx="45" cy="21" r="6" fill="#FFBD2E"/>
+  <circle cx="65" cy="21" r="6" fill="#27C93F"/>
+  <text x="300" y="26" fill="#A8DADC" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Student Smart Budget &amp; Expense Manager</text>
+
+  <!-- Donut Chart representation -->
+  <g transform="translate(130, 195)">
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#2A9D8F" stroke-width="24"/>
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#E76F51" stroke-width="24" stroke-dasharray="140 300" stroke-dashoffset="60"/>
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#E9C46A" stroke-width="24" stroke-dasharray="90 350" stroke-dashoffset="200"/>
+    <text x="0" y="-5" fill="#FFFFFF" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">₦85,000</text>
+    <text x="0" y="16" fill="#A8DADC" font-family="sans-serif" font-size="10" text-anchor="middle">Monthly Budget</text>
+  </g>
+
+  <!-- Legend & metrics -->
+  <rect x="270" y="70" width="290" height="250" rx="10" fill="#132B36" stroke="#2A9D8F" stroke-width="1"/>
+  <text x="290" y="105" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Spending Categories</text>
+
+  <rect x="290" y="130" width="12" height="12" rx="3" fill="#2A9D8F"/>
+  <text x="312" y="141" fill="#FFFFFF" font-family="sans-serif" font-size="12">Textbooks &amp; Software (45%)</text>
+  <text x="520" y="141" fill="#A8DADC" font-family="sans-serif" font-size="12" text-anchor="end">₦38,250</text>
+
+  <rect x="290" y="170" width="12" height="12" rx="3" fill="#E76F51"/>
+  <text x="312" y="181" fill="#FFFFFF" font-family="sans-serif" font-size="12">Campus Living &amp; Food (35%)</text>
+  <text x="520" y="181" fill="#A8DADC" font-family="sans-serif" font-size="12" text-anchor="end">₦29,750</text>
+
+  <rect x="290" y="210" width="12" height="12" rx="3" fill="#E9C46A"/>
+  <text x="312" y="221" fill="#FFFFFF" font-family="sans-serif" font-size="12">Internet &amp; Data Bundle (20%)</text>
+  <text x="520" y="221" fill="#A8DADC" font-family="sans-serif" font-size="12" text-anchor="end">₦17,000</text>
+
+  <!-- Remaining badge -->
+  <rect x="290" y="255" width="250" height="42" rx="8" fill="#1D404F"/>
+  <text x="305" y="280" fill="#2A9D8F" font-family="sans-serif" font-size="12" font-weight="bold">Savings Goal on Track: +₦12,500</text>
+</svg>

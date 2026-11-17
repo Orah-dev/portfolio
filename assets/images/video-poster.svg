@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="vBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2545"/>
+      <stop offset="100%" stop-color="#134074"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#vBg)"/>
+  <!-- Decorative circles -->
+  <circle cx="400" cy="225" r="160" fill="none" stroke="#00A896" stroke-width="2" stroke-opacity="0.3"/>
+  <circle cx="400" cy="225" r="100" fill="none" stroke="#02C39A" stroke-width="2" stroke-opacity="0.5"/>
+  
+  <!-- Play button circle -->
+  <circle cx="400" cy="210" r="46" fill="#00A896" opacity="0.9"/>
+  <polygon points="390,192 418,210 390,228" fill="#FFFFFF"/>
+  
+  <text x="400" y="295" fill="#FFFFFF" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Student Profile &amp; Project Walkthrough</text>
+  <text x="400" y="325" fill="#8DA9C4" font-family="sans-serif" font-size="14" text-anchor="middle">MIVA Open University • COS 106 Multimedia Demonstration</text>
+</svg>

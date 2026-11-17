@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Deborah - Educational Background, Career Aspirations, Technical Skills, and Hobbies at MIVA Open University." />
+  <meta name="author" content="Tovishede" />
+  <title>About Me | Student Portfolio &amp; Academic Management Website</title>
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/miva-logo.svg" />
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="MIVA Open University Portfolio Home">
+        <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" class="nav-brand-img" width="180" height="44" />
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active" aria-current="page">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="site-main" id="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <header class="section-header">
+        <span class="section-badge">Student Profile</span>
+        <h1>About Me</h1>
+        <p class="section-subtitle">
+          My academic path, career aspirations in software engineering, technical capabilities, and personal interests.
+        </p>
+      </header>
+
+      <!-- Profile Overview Card -->
+      <section class="card profile-overview-card" aria-label="Student Summary">
+        <figure style="margin: 0;">
+          <img src="assets/images/deborah.jpg" alt="Photograph of Deborah" class="profile-card-img" width="240" height="240" />
+        </figure>
+        
+        <div class="profile-card-details">
+          <h2>Deborah Tovishede</h2>
+          <div class="profile-badge-row">
+            <span class="tag tag-accent">B.Sc. Computer Science</span>
+            <span class="tag">MIVA Open University</span>
+            <span class="tag">COS 106 Web Technologies</span>
+            <span class="tag">Current GPA: 4.76 / 5.0</span>
+          </div>
+          <p>
+            I am a high-achieving undergraduate student with a focus on modern software engineering, web architectures, 
+            and scalable digital solutions. With an analytical mindset and a dedication to writing clean, semantic code, 
+            I enjoy transforming complex computational problems into elegant, accessible web interfaces.
+          </p>
+
+          <!-- Key Highlights via Definition List (<dl>) -->
+          <dl class="spec-list">
+            <dt>Faculty:</dt>
+            <dd>Faculty of Computing and Applied Sciences</dd>
+            <dt>Department:</dt>
+            <dd>Department of Computer Science</dd>
+            <dt>Academic Level:</dt>
+            <dd>Undergraduate (Year 1 / 100 Level)</dd>
+            <dt>Study Focus:</dt>
+            <dd>Web Technologies, Software Engineering, Algorithms</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 1. Educational Background Section (Demonstrating HTML Table Requirement) -->
+      <section class="section-block" aria-labelledby="education-heading">
+        <header class="section-header">
+          <span class="section-badge">Academic Track Record</span>
+          <h2 id="education-heading">Educational Background &amp; Coursework</h2>
+          <p class="section-subtitle">
+            Formal education, academic credentials, and recent semester performance overview.
+          </p>
+        </header>
+
+        <!-- Semantic Academic Performance Table -->
+        <div class="table-responsive">
+          <table class="academic-table">
+            <caption>MIVA Open University — B.Sc. Computer Science Academic Course Progress</caption>
+            <thead>
+              <tr>
+                <th scope="col">Course Code</th>
+                <th scope="col">Course Title</th>
+                <th scope="col">Credit Units</th>
+                <th scope="col">Semester</th>
+                <th scope="col">Grade / Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>COS 106</strong></td>
+                <td>Introduction to Web Technologies</td>
+                <td>3</td>
+                <td>First Semester</td>
+                <td><span class="badge-grade">A (In Progress)</span></td>
+              </tr>
+              <tr>
+                <td><strong>COS 101</strong></td>
+                <td>Introduction to Computer Science &amp; Problem Solving</td>
+                <td>3</td>
+                <td>First Semester</td>
+                <td><span class="badge-grade">A (Distinction)</span></td>
+              </tr>
+              <tr>
+                <td><strong>MTH 101</strong></td>
+                <td>General Mathematics I (Algebra &amp; Trigonometry)</td>
+                <td>3</td>
+                <td>First Semester</td>
+                <td><span class="badge-grade">B+ (Very Good)</span></td>
+              </tr>
+              <tr>
+                <td><strong>PHY 101</strong></td>
+                <td>General Physics (Mechanics &amp; Properties of Matter)</td>
+                <td>3</td>
+                <td>First Semester</td>
+                <td><span class="badge-grade">B+ (Very Good)</span></td>
+              </tr>
+              <tr>
+                <td><strong>GST 101</strong></td>
+                <td>Use of English &amp; Communication Skills</td>
+                <td>2</td>
+                <td>First Semester</td>
+                <td><span class="badge-grade">A (Distinction)</span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"><strong>Total Registered Credit Units: 14</strong></td>
+                <td colspan="3"><strong>Cumulative Grade Point Average (CGPA): 4.76 / 5.00</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Academic Milestones List (<ol>) -->
+        <div class="card" style="margin-top: 1.5rem;">
+          <h3 style="margin-bottom: 0.75rem;">Educational Milestones</h3>
+          <ol style="padding-left: 1.5rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.6rem;">
+            <li>
+              <strong>B.Sc. Computer Science (In Progress)</strong> — MIVA Open University, Abuja (2025 – Present)
+              <p style="color: var(--text-muted); font-size: 0.88rem; margin: 0.2rem 0 0 0;">Focused on full-stack web engineering, algorithms, and computational theory.</p>
+            </li>
+            <li>
+              <strong>Senior Secondary School Certificate Examination (SSCE)</strong> — United Senior High School, Lagos (2021 – 2024)
+              <p style="color: var(--text-muted); font-size: 0.88rem; margin: 0.2rem 0 0 0;">Graduated with Distinctions in Mathematics, Further Mathematics, and Computer Studies.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 2. Technical Skills Section -->
+      <section class="section-block" aria-labelledby="skills-heading">
+        <header class="section-header">
+          <span class="section-badge">Core Competencies</span>
+          <h2 id="skills-heading">Technical Skills &amp; Proficiencies</h2>
+          <p class="section-subtitle">
+            A comprehensive breakdown of web technologies, programming languages, and developer tools.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          
+          <!-- Frontend Development Card -->
+          <article class="card skill-card">
+            <h4>🎨 Frontend Technologies</h4>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>HTML5 (Semantic &amp; Accessible)</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 95%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>CSS3 (Flexbox, Grid, Animations)</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 90%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>JavaScript (ES6+, DOM, Events)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 85%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>Responsive &amp; Mobile-First Design</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 92%;"></div>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Programming & Logic Card -->
+          <article class="card skill-card">
+            <h4>💻 Programming &amp; Logic</h4>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>Python (Algorithms &amp; Scripting)</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 80%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>Data Structures &amp; Algorithms</span>
+                  <span>78%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 78%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>Object-Oriented Programming (OOP)</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 82%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>Database Foundations (SQL Basics)</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 75%;"></div>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Tools & Workflow Card -->
+          <article class="card skill-card">
+            <h4>🛠️ Tools &amp; Methodologies</h4>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>Git Version Control &amp; GitHub</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 88%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>Browser Developer Tools (Chrome DevTools)</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 90%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>VS Code &amp; Modern IDE Workflows</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 95%;"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span>Web Hosting (GitHub Pages / Netlify)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" style="width: 85%;"></div>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3. Career Aspirations Section -->
+      <section class="section-block" aria-labelledby="aspirations-heading">
+        <header class="section-header">
+          <span class="section-badge">Vision &amp; Ambition</span>
+          <h2 id="aspirations-heading">Career Aspirations</h2>
+          <p class="section-subtitle">
+            Strategic professional goals and future roadmap in the global technology ecosystem.
+          </p>
+        </header>
+
+        <div class="aspirations-grid">
+          
+          <article class="card aspiration-card">
+            <h3>🚀 Full-Stack Software Engineer</h3>
+            <p>
+              My immediate career ambition is to excel as a versatile Full-Stack Engineer, architecting 
+              responsive, high-throughput web applications with robust backend microservices and intuitive, 
+              accessible user experiences.
+            </p>
+            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem;">
+              <li>Mastery of modern JavaScript ecosystems (Node.js, React)</li>
+              <li>Designing scalable RESTful and GraphQL APIs</li>
+              <li>Implementing clean code architecture and automated testing</li>
+            </ul>
+          </article>
+
+          <article class="card aspiration-card">
+            <h3>☁️ Cloud Solutions &amp; DevOps</h3>
+            <p>
+              I aspire to specialize in cloud infrastructure engineering, continuous integration and deployment (CI/CD) 
+              pipelines, and serverless architectures to deploy resilient educational and enterprise platforms.
+            </p>
+            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem;">
+              <li>Achieving AWS and Google Cloud Associate certifications</li>
+              <li>Containerization with Docker and Kubernetes orchestration</li>
+              <li>Automated zero-downtime deployment pipelines</li>
+            </ul>
+          </article>
+
+          <article class="card aspiration-card">
+            <h3>💡 Educational Technology Innovator</h3>
+            <p>
+              Growing through MIVA Open University's innovative remote model, I am motivated to create accessible 
+              EdTech tools that empower African students with interactive coding environments, localized digital libraries, 
+              and peer collaboration platforms.
+            </p>
+            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem;">
+              <li>Building offline-capable progressive web apps (PWAs)</li>
+              <li>Mentoring upcoming students in introductory web technologies</li>
+              <li>Contributing to open-source educational software</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 4. Hobbies & Interests Section -->
+      <section class="section-block" aria-labelledby="hobbies-heading">
+        <header class="section-header">
+          <span class="section-badge">Life Beyond Code</span>
+          <h2 id="hobbies-heading">Hobbies &amp; Personal Interests</h2>
+          <p class="section-subtitle">
+            Activities that inspire creativity, mental focus, and well-rounded personal development.
+          </p>
+        </header>
+
+        <div class="hobbies-grid">
+          <article class="hobby-card">
+            <span class="hobby-icon">📚</span>
+            <h4>Tech Literature &amp; Sci-Fi</h4>
+            <p>Reading publications on software engineering patterns, artificial intelligence ethics, and speculative fiction.</p>
+          </article>
+
+          <article class="hobby-card">
+            <span class="hobby-icon">🎧</span>
+            <h4>Sound Design &amp; Podcasts</h4>
+            <p>Listening to computer science podcasts like Syntax.fm and exploring digital music synthesis.</p>
+          </article>
+
+          <article class="hobby-card">
+            <span class="hobby-icon">🏀</span>
+            <h4>Basketball &amp; Athletics</h4>
+            <p>Playing weekend basketball to stay active, maintain physical endurance, and foster teamwork.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5. Multimedia Showcase (Demonstrating HTML Video Requirement) -->
+      <section class="section-block" aria-labelledby="multimedia-heading">
+        <header class="section-header">
+          <span class="section-badge">Multimedia Presentation</span>
+          <h2 id="multimedia-heading">Interactive Video Showcase</h2>
+          <p class="section-subtitle">
+            Demonstrating HTML5 video playback integration with native browser controls.
+          </p>
+        </header>
+
+        <div class="video-showcase-box">
+          <div class="video-container">
+            <video controls poster="assets/images/video-poster.svg" preload="metadata" width="100%">
+              <source src="assets/media/student-intro.mp4" type="video/mp4" />
+              Your browser does not support the video tag. Please update your browser to watch this video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" style="filter: brightness(0) invert(1); height: 38px; margin-bottom: 1rem;" />
+          <p>
+            COS 106: Introduction to Web Technologies Practical Term Project. 
+            Designed and developed as a responsive student academic portfolio and management system.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Course Information</h4>
+          <p style="font-size: 0.9rem; line-height: 1.8;">
+            <strong>Course:</strong> COS 106<br />
+            <strong>Institution:</strong> MIVA Open University<br />
+            <strong>Term:</strong> 2025/2026 Academic Session<br />
+            <strong>Location:</strong> Lagos, Nigeria
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> <strong>Deborah Tovishede</strong> • MIVA Open University. All Rights Reserved. Built for COS 106 Term Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

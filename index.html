@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="COS 106 Term Project - Student Academic Portfolio and Management Platform for MIVA Open University." />
+  <meta name="author" content="Deborah" />
+  <title>Home | Student Portfolio &amp; Academic Management Website</title>
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/miva-logo.svg" />
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="MIVA Open University Portfolio Home">
+        <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" class="nav-brand-img" width="180" height="44" />
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="site-main" id="main-content">
+    <div class="container">
+      
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Details -->
+          <article class="hero-text-content">
+            <div class="hero-badge-wrap">
+              <span class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                B.Sc. Computer Science • MIVA Open University
+              </span>
+            </div>
+
+            <h1 id="hero-heading" class="hero-title">
+              Welcome, I'm <span class="hero-title-highlight">Deborah Tovishede</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Aspiring Software Engineer &amp; Full-Stack Web Developer
+            </p>
+
+            <p class="hero-bio">
+              Welcome to my official academic portfolio and student management platform. 
+              As a dedicated Computer Science undergraduate at MIVA Open University, I am passionate 
+              about developing accessible, high-performance web applications and solving real-world challenges 
+              through modern web technologies, computational problem-solving, and continuous learning.
+            </p>
+
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">View My Projects &rarr;</a>
+              <a href="planner.html" class="btn btn-outline">Academic Planner</a>
+              <a href="contact.html" class="btn btn-accent">Get in Touch</a>
+            </div>
+
+            <!-- Academic Quick Highlights -->
+            <div class="hero-meta-stats">
+              <div class="meta-stat-item">
+                <h4>4.76</h4>
+                <p>Cumulative GPA</p>
+              </div>
+              <div class="meta-stat-item">
+                <h4>4+</h4>
+                <p>Web Projects</p>
+              </div>
+              <div class="meta-stat-item">
+                <h4>100%</h4>
+                <p>Commitment to Excellence</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hero Visual & Photograph -->
+          <aside class="hero-visual" aria-label="Student Photograph and Profile Badge">
+            <div class="hero-photo-wrapper">
+              <figure>
+                <img 
+                  src="assets/images/deborah.jpg" 
+                  alt="Professional Photograph of Deborah Tovishede, MIVA Open University Student" 
+                  class="hero-photo" 
+                  width="380" 
+                  height="380"
+                />
+                <figcaption class="sr-only" style="display:none;">Deborah Tovishede - B.Sc. Computer Science Student Portrait</figcaption>
+              </figure>
+              
+              <!-- Floating Highlight Badge -->
+              <div class="hero-floating-card">
+                <span class="floating-card-icon">🎓</span>
+                <div class="floating-card-text">
+                  <h5>COS 106 Student</h5>
+                  <p>Intro to Web Technologies</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </section>
+
+      <!-- Multimedia Audio Greeting Feature -->
+      <section class="section-block" aria-labelledby="audio-greeting-heading">
+        <div class="audio-intro-card">
+          <div class="audio-intro-info">
+            <span class="section-badge" style="background-color: rgba(255,255,255,0.18); color: #FFFFFF;">Audio Feature</span>
+            <h3 id="audio-greeting-heading">Play this audio for fun</h3>
+          </div>
+          <div class="audio-player-wrap">
+            <audio controls preload="metadata" title="Student Welcome Audio Chime">
+              <source src="assets/media/welcome-audio.wav" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Academic Focus Areas (Semantic Cards) -->
+      <section class="section-block" aria-labelledby="focus-heading">
+        <header class="section-header">
+          <span class="section-badge">Core Pillars</span>
+          <h2 id="focus-heading">Academic &amp; Practical Foundation</h2>
+          <p class="section-subtitle">
+            Exploring modern web engineering paradigms through hands-on coursework and projects.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card">
+            <h4>🌐 Semantic Web Structure</h4>
+            <p>Writing well-structured, accessible HTML5 documents adhering to W3C standards, semantic tags, and search engine discoverability.</p>
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.9rem;">
+              <li>Semantic HTML5 page outlines</li>
+              <li>Form accessibility &amp; validation</li>
+              <li>Clean document architecture</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h4>🎨 Responsive CSS Architecture</h4>
+            <p>Crafting adaptable user interfaces with modern CSS3, CSS Grid, Flexbox, custom design tokens, and fluid typography.</p>
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.9rem;">
+              <li>Mobile-first responsive workflows</li>
+              <li>Flexbox &amp; CSS Grid layouts</li>
+              <li>Micro-animations &amp; smooth transitions</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h4>⚡ Dynamic Client-Side Logic</h4>
+            <p>Implementing client-side interactivity, DOM manipulation, asynchronous state management, and strict form validation using JavaScript.</p>
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.9rem;">
+              <li>Interactive task planner &amp; state</li>
+              <li>Regex validation and event dispatching</li>
+              <li>LocalStorage persistent memory</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Quick Call To Action Banner -->
+      <section class="card" style="background: linear-gradient(135deg, #134074 0%, #0B2545 100%); color: #FFFFFF; text-align: center; padding: 3rem 1.5rem;" aria-label="Explore Portfolio Sections">
+        <h2 style="color: #FFFFFF; margin-bottom: 0.75rem;">Explore the Full Academic Platform</h2>
+        <p style="color: #C5D1DE; max-width: 650px; margin: 0 auto 1.75rem auto;">
+          Dive deeper into my educational journey, browse through interactive web development projects, or test the live academic task management system.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="about.html" class="btn btn-accent">Read My Background</a>
+          <a href="planner.html" class="btn btn-outline" style="border-color: #FFFFFF; color: #FFFFFF;">Open Academic Planner</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" style="filter: brightness(0) invert(1); height: 38px; margin-bottom: 1rem;" />
+          <p>
+            COS 106: Introduction to Web Technologies Practical Term Project. 
+            Designed and developed as a responsive student academic portfolio and management system.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Course Information</h4>
+          <p style="font-size: 0.9rem; line-height: 1.8;">
+            <strong>Course:</strong> COS 106<br />
+            <strong>Institution:</strong> MIVA Open University<br />
+            <strong>Term:</strong> 2025/2026 Academic Session<br />
+            <strong>Location:</strong> Abuja, Nigeria
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> <strong>Deborah Tovishede</strong> • MIVA Open University. All Rights Reserved. Built for COS 106 Term Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

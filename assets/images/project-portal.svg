@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <linearGradient id="projBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B263B"/>
+      <stop offset="100%" stop-color="#0D1B2A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#projBg2)"/>
+  <rect width="600" height="42" rx="16" fill="#080F17"/>
+  <circle cx="25" cy="21" r="6" fill="#FF5F56"/>
+  <circle cx="45" cy="21" r="6" fill="#FFBD2E"/>
+  <circle cx="65" cy="21" r="6" fill="#27C93F"/>
+  <text x="300" y="26" fill="#A4B9D0" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">MIVA Student Course Platform &amp; Resource Hub</text>
+
+  <!-- Sidebar -->
+  <rect x="30" y="60" width="130" height="270" rx="8" fill="#14213D"/>
+  <rect x="45" y="80" width="100" height="24" rx="5" fill="#3D5A80"/>
+  <text x="55" y="96" fill="#FFFFFF" font-family="sans-serif" font-size="11">Dashboard</text>
+  <text x="55" y="130" fill="#8DA9C4" font-family="sans-serif" font-size="11">My Courses</text>
+  <text x="55" y="165" fill="#8DA9C4" font-family="sans-serif" font-size="11">Lecture Notes</text>
+  <text x="55" y="200" fill="#8DA9C4" font-family="sans-serif" font-size="11">Submissions</text>
+  <text x="55" y="235" fill="#8DA9C4" font-family="sans-serif" font-size="11">Grades</text>
+
+  <!-- Course Cards -->
+  <rect x="180" y="60" width="185" height="125" rx="8" fill="#1E2F48" stroke="#3D5A80" stroke-width="1"/>
+  <rect x="195" y="75" width="55" height="18" rx="4" fill="#E63946"/>
+  <text x="222" y="88" fill="#FFF" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">COS 106</text>
+  <text x="195" y="115" fill="#FFF" font-family="sans-serif" font-size="13" font-weight="bold">Intro to Web Tech</text>
+  <text x="195" y="135" fill="#8DA9C4" font-family="sans-serif" font-size="10">Prof. Web Department</text>
+  <rect x="195" y="152" width="150" height="8" rx="4" fill="#0B1B2B"/>
+  <rect x="195" y="152" width="130" height="8" rx="4" fill="#00A896"/>
+
+  <rect x="385" y="60" width="185" height="125" rx="8" fill="#1E2F48" stroke="#3D5A80" stroke-width="1"/>
+  <rect x="400" y="75" width="55" height="18" rx="4" fill="#00A896"/>
+  <text x="427" y="88" fill="#FFF" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">COS 101</text>
+  <text x="400" y="115" fill="#FFF" font-family="sans-serif" font-size="13" font-weight="bold">Intro to Computing</text>
+  <text x="400" y="135" fill="#8DA9C4" font-family="sans-serif" font-size="10">Computer Science Dept</text>
+  <rect x="400" y="152" width="150" height="8" rx="4" fill="#0B1B2B"/>
+  <rect x="400" y="152" width="140" height="8" rx="4" fill="#02C39A"/>
+
+  <!-- Announcement Bar -->
+  <rect x="180" y="200" width="390" height="130" rx="8" fill="#192A42"/>
+  <text x="200" y="225" fill="#FFBD2E" font-family="sans-serif" font-size="13" font-weight="bold">Academic Notices &amp; Schedules</text>
+  <circle cx="210" cy="255" r="4" fill="#02C39A"/>
+  <text x="225" y="259" fill="#E0E6ED" font-family="sans-serif" font-size="11">COS 106 Term Project submission deadline active</text>
+  <circle cx="210" cy="285" r="4" fill="#00A896"/>
+  <text x="225" y="289" fill="#E0E6ED" font-family="sans-serif" font-size="11">Interactive live coding session recordings published</text>
+  <circle cx="210" cy="315" r="4" fill="#EE6C4D"/>
+  <text x="225" y="319" fill="#E0E6ED" font-family="sans-serif" font-size="11">Next semester course registration opens soon</text>
+</svg>

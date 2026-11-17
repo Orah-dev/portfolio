@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Momoh - MIVA Open University COS 106 Student Web Portfolio Contact Form." />
+  <meta name="author" content="Momoh" />
+  <title>Contact | Student Portfolio &amp; Academic Management Website</title>
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/miva-logo.svg" />
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="MIVA Open University Portfolio Home">
+        <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" class="nav-brand-img" width="180" height="44" />
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="site-main" id="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <header class="section-header">
+        <span class="section-badge">Get In Touch</span>
+        <h1>Contact &amp; Connect</h1>
+        <p class="section-subtitle">
+          Have an inquiry, project collaboration idea, or academic question? Send me a message using the validated form below.
+        </p>
+      </header>
+
+      <!-- Two-Column Contact Layout -->
+      <div class="contact-layout">
+        
+        <!-- Left Column: Academic & Personal Contact Information -->
+        <aside class="card contact-info-card" aria-label="Contact Channels &amp; Availability">
+          <div>
+            <h3>Academic Contact Channels</h3>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-top: 0.5rem;">
+              Reach out directly for peer academic discussions, COS 106 collaborative study sessions, 
+              or software development opportunities.
+            </p>
+
+            <ul class="contact-channels">
+              <li class="channel-item">
+                <div class="channel-icon">📧</div>
+                <div class="channel-text">
+                  <h5>University Student Email</h5>
+                  <p><a href="mailto:d.tovishede5863@miva.edu.ng">d.tovishede5863@miva.edu.ng</a></p>
+                </div>
+              </li>
+
+              <li class="channel-item">
+                <div class="channel-icon">📱</div>
+                <div class="channel-text">
+                  <h5>Direct Mobile Phone</h5>
+                  <p><a href="tel:+2349160908980">+234 916 090 8980</a></p>
+                </div>
+              </li>
+
+              <li class="channel-item">
+                <div class="channel-icon">🏛️</div>
+                <div class="channel-text">
+                  <h5>Institution &amp; Department</h5>
+                  <p>MIVA Open University, Abuja, Nigeria</p>
+                  <p style="font-size: 0.8rem; color: var(--accent-teal-dark);">Department of Computer Science</p>
+                </div>
+              </li>
+
+              <li class="channel-item">
+                <div class="channel-icon">⏰</div>
+                <div class="channel-text">
+                  <h5>Study &amp; Office Hours</h5>
+                  <p>Monday – Friday: 9:00 AM – 5:00 PM (WAT)</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Right Column: Validated Contact Form -->
+        <section class="card" aria-label="Validated Inquiry Form">
+          <h3 style="margin-bottom: 0.5rem;">Send a Direct Message</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.75rem;">
+            Fields marked with an asterisk (<span class="required-asterisk">*</span>) are mandatory.
+          </p>
+
+          <!-- Success Alert Banner (Shown via JavaScript) -->
+          <div class="alert-banner alert-success" id="contactSuccessAlert" role="alert" aria-live="polite">
+            <span style="font-size: 1.5rem;">✅</span>
+            <div>
+              <strong>Message Sent Successfully!</strong>
+              <p style="margin: 0; font-size: 0.88rem;">Thank you for contacting me. All input checks passed, and your inquiry has been recorded.</p>
+            </div>
+          </div>
+
+          <!-- The Form -->
+          <form id="contactForm" novalidate>
+            
+            <!-- 1. Name Field -->
+            <div class="form-field">
+              <label for="fullName">Full Name <span class="required-asterisk">*</span></label>
+              <input 
+                type="text" 
+                id="fullName" 
+                name="fullName" 
+                class="form-control" 
+                placeholder="e.g. John Doe" 
+                autocomplete="name"
+                required 
+              />
+              <span class="input-feedback" aria-live="polite"></span>
+            </div>
+
+            <!-- 2. Email Address Field -->
+            <div class="form-field">
+              <label for="emailAddress">Email Address <span class="required-asterisk">*</span></label>
+              <input 
+                type="email" 
+                id="emailAddress" 
+                name="emailAddress" 
+                class="form-control" 
+                placeholder="e.g. john.doe@example.com" 
+                autocomplete="email"
+                required 
+              />
+              <span class="input-feedback" aria-live="polite"></span>
+            </div>
+
+            <!-- 3. Phone Number Field -->
+            <div class="form-field">
+              <label for="phoneNumber">Phone Number (Digits Only) <span class="required-asterisk">*</span></label>
+              <input 
+                type="tel" 
+                id="phoneNumber" 
+                name="phoneNumber" 
+                class="form-control" 
+                placeholder="e.g. 08012345678 (digits only)" 
+                autocomplete="tel"
+                required 
+              />
+              <span class="input-feedback" aria-live="polite"></span>
+            </div>
+
+            <!-- 4. Message Field -->
+            <div class="form-field">
+              <label for="messageText">Your Message <span class="required-asterisk">*</span></label>
+              <textarea 
+                id="messageText" 
+                name="messageText" 
+                rows="5" 
+                class="form-control" 
+                placeholder="Write your academic inquiry or message here..." 
+                required
+              ></textarea>
+              <span class="input-feedback" aria-live="polite"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.85rem;">
+              Submit Message &rarr;
+            </button>
+
+          </form>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" style="filter: brightness(0) invert(1); height: 38px; margin-bottom: 1rem;" />
+          <p>
+            COS 106: Introduction to Web Technologies Practical Term Project. 
+            Designed and developed as a responsive student academic portfolio and management system.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Course Information</h4>
+          <p style="font-size: 0.9rem; line-height: 1.8;">
+            <strong>Course:</strong> COS 106<br />
+            <strong>Institution:</strong> MIVA Open University<br />
+            <strong>Term:</strong> 2025/2026 Academic Session<br />
+            <strong>Location:</strong> Abuja, Nigeria
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> <strong>Momoh</strong> • MIVA Open University. All Rights Reserved. Built for COS 106 Term Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

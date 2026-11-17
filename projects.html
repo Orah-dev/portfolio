@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic and Web Engineering Projects by Momoh - MIVA Open University COS 106 Term Project." />
+  <meta name="author" content="Momoh" />
+  <title>Projects | Student Portfolio &amp; Academic Management Website</title>
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/miva-logo.svg" />
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="MIVA Open University Portfolio Home">
+        <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" class="nav-brand-img" width="180" height="44" />
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="site-main" id="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <header class="section-header">
+        <span class="section-badge">Featured Portfolio Work</span>
+        <h1>Academic &amp; Web Projects</h1>
+        <p class="section-subtitle">
+          Demonstrating practical web engineering, client-side algorithms, and user-centric problem solving.
+        </p>
+      </header>
+
+      <!-- Interactive Category Filter Buttons -->
+      <nav class="project-filters" aria-label="Project category filters">
+        <button type="button" class="filter-btn active" data-category="all">All Projects (4)</button>
+        <button type="button" class="filter-btn" data-category="academic">Academic Tools</button>
+        <button type="button" class="filter-btn" data-category="productivity">Productivity &amp; Campus</button>
+        <button type="button" class="filter-btn" data-category="webapps">Web Applications</button>
+      </nav>
+
+      <!-- Projects Grid (4 Projects) -->
+      <div class="projects-grid" id="projectsGrid">
+        
+        <!-- Project 1: Student CGPA Calculator -->
+        <article class="project-card" data-category="academic webapps">
+          <figure class="project-thumb-wrap">
+            <img 
+              src="assets/images/project-gpa.svg" 
+              alt="Screenshot of Student CGPA Calculator and Grade Forecaster web app" 
+              class="project-thumb" 
+              width="600" 
+              height="360"
+            />
+            <span class="project-badge-float">Academic Tool</span>
+            <figcaption class="sr-only" style="display:none;">Student CGPA Calculator UI Screenshot</figcaption>
+          </figure>
+
+          <div class="project-body">
+            <h3 class="project-title">1. Student CGPA Calculator &amp; Academic Forecaster</h3>
+            
+            <p class="project-description">
+              A responsive client-side web application engineered to compute semester GPAs and cumulative CGPAs 
+              based on the Nigerian university 5.0 grading scale. Features grade prediction, required credit unit 
+              evaluations, and semester-by-semester historical trend visualization.
+            </p>
+
+            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+              <li>Automatic 5.0 scale GPA calculation logic</li>
+              <li>Dynamic addition &amp; removal of course rows</li>
+              <li>First Class honor threshold forecasting</li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS Grid</span>
+              <span class="project-tag">JavaScript (ES6)</span>
+              <span class="project-tag">LocalStorage</span>
+            </div>
+
+            <div class="project-links">
+              <button 
+                type="button" 
+                class="btn btn-primary btn-sm" 
+                data-demo-target="true" 
+                data-project-title="Student CGPA Calculator &amp; Academic Forecaster"
+                data-project-desc="Interactive simulated demo initialized. In this application, students input course codes, credit weights, and letter grades to calculate semester and cumulative GPA with instant mathematical precision."
+              >
+                🚀 Live Demo
+              </button>
+              <a 
+                href="https://github.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-outline btn-sm"
+                aria-label="View CGPA Calculator source code on GitHub"
+              >
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: MIVA Student Portal & Course Hub -->
+        <article class="project-card" data-category="academic webapps">
+          <figure class="project-thumb-wrap">
+            <img 
+              src="assets/images/project-portal.svg" 
+              alt="Screenshot of MIVA Open University Student Course Portal and Resource Hub" 
+              class="project-thumb" 
+              width="600" 
+              height="360"
+            />
+            <span class="project-badge-float">Portal Concept</span>
+            <figcaption class="sr-only" style="display:none;">MIVA Student Course Portal Interface</figcaption>
+          </figure>
+
+          <div class="project-body">
+            <h3 class="project-title">2. MIVA Course Platform &amp; Resource Hub</h3>
+            
+            <p class="project-description">
+              A student-centric course portal prototype designed for distance learning university students. 
+              Offers structured course navigation, lecture video indexation, assignment submission deadlines, 
+              and real-time academic bulletin announcements.
+            </p>
+
+            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+              <li>Centralized coursework dashboard with status bars</li>
+              <li>Direct lecture materials access &amp; syllabus viewer</li>
+              <li>Accessible high-contrast theme compliant with WCAG</li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">Semantic HTML5</span>
+              <span class="project-tag">Flexbox UI</span>
+              <span class="project-tag">CSS Variables</span>
+              <span class="project-tag">Interactive DOM</span>
+            </div>
+
+            <div class="project-links">
+              <button 
+                type="button" 
+                class="btn btn-primary btn-sm" 
+                data-demo-target="true" 
+                data-project-title="MIVA Course Platform &amp; Resource Hub"
+                data-project-desc="Interactive simulated demo initialized. The student portal prototype features course card progress meters, interactive notice filtering, and lecture resource downloads."
+              >
+                🚀 Live Demo
+              </button>
+              <a 
+                href="https://github.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-outline btn-sm"
+                aria-label="View Course Platform source code on GitHub"
+              >
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Campus Study Group & Event Scheduler -->
+        <article class="project-card" data-category="productivity">
+          <figure class="project-thumb-wrap">
+            <img 
+              src="assets/images/project-events.svg" 
+              alt="Screenshot of Campus Study Group &amp; Event Scheduler application" 
+              class="project-thumb" 
+              width="600" 
+              height="360"
+            />
+            <span class="project-badge-float">Campus Life</span>
+            <figcaption class="sr-only" style="display:none;">Campus Study Group Scheduler Mockup</figcaption>
+          </figure>
+
+          <div class="project-body">
+            <h3 class="project-title">3. Study Group &amp; Campus Event Scheduler</h3>
+            
+            <p class="project-description">
+              A collaborative event organization tool that enables undergraduate students to arrange virtual 
+              study circles, code reviews, and academic hackathons. Integrates calendar reminders, meeting links, 
+              and peer RSVP tracking.
+            </p>
+
+            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+              <li>Interactive calendar date picker &amp; event filters</li>
+              <li>Virtual meeting room links (Google Meet, Discord)</li>
+              <li>Dynamic attendance RSVP counter</li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">JavaScript Events</span>
+              <span class="project-tag">CSS Grid Calendar</span>
+              <span class="project-tag">HTML5 Forms</span>
+              <span class="project-tag">JSON Data</span>
+            </div>
+
+            <div class="project-links">
+              <button 
+                type="button" 
+                class="btn btn-primary btn-sm" 
+                data-demo-target="true" 
+                data-project-title="Study Group &amp; Campus Event Scheduler"
+                data-project-desc="Interactive simulated demo initialized. Students can create study groups for COS 106, join existing sessions, and synchronize deadlines with their personal calendars."
+              >
+                🚀 Live Demo
+              </button>
+              <a 
+                href="https://github.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-outline btn-sm"
+                aria-label="View Event Scheduler source code on GitHub"
+              >
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Student Smart Budget & Expense Manager -->
+        <article class="project-card" data-category="productivity webapps">
+          <figure class="project-thumb-wrap">
+            <img 
+              src="assets/images/project-budget.svg" 
+              alt="Screenshot of Student Smart Budget &amp; Expense Manager web application" 
+              class="project-thumb" 
+              width="600" 
+              height="360"
+            />
+            <span class="project-badge-float">Productivity</span>
+            <figcaption class="sr-only" style="display:none;">Student Smart Budget UI Screenshot</figcaption>
+          </figure>
+
+          <div class="project-body">
+            <h3 class="project-title">4. Student Smart Budget &amp; Expense Manager</h3>
+            
+            <p class="project-description">
+              A personal financial management web utility tailored for university students living on campus or 
+              studying remotely. Tracks monthly textbook allowances, internet data subscriptions, and living expenses 
+              with interactive visual budget summaries.
+            </p>
+
+            <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+              <li>Categorized spending summaries (Books, Internet, Food)</li>
+              <li>Automated savings goal calculator</li>
+              <li>Persistent data storage via Browser LocalStorage</li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">HTML5 Form Controls</span>
+              <span class="project-tag">CSS Donut Charts</span>
+              <span class="project-tag">JavaScript Math</span>
+              <span class="project-tag">Responsive UI</span>
+            </div>
+
+            <div class="project-links">
+              <button 
+                type="button" 
+                class="btn btn-primary btn-sm" 
+                data-demo-target="true" 
+                data-project-title="Student Smart Budget &amp; Expense Manager"
+                data-project-desc="Interactive simulated demo initialized. Allows students to log expenses, set monthly limits in Naira, and receive visual budget status notifications."
+              >
+                🚀 Live Demo
+              </button>
+              <a 
+                href="https://github.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-outline btn-sm"
+                aria-label="View Budget Manager source code on GitHub"
+              >
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Simulated Live Demo Modal Dialog -->
+  <aside class="modal-overlay" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-content">
+      <div class="modal-icon">💻</div>
+      <h3 id="modalProjectTitle" style="color: var(--primary-dark); margin-bottom: 0.5rem;">Project Demo</h3>
+      <p id="modalProjectDesc" style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6;">
+        Demonstration preview.
+      </p>
+      <div style="background-color: var(--bg-subtle); padding: 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--accent-teal-dark);">
+        ✅ Live interactive simulation active • Powered by Vanilla JavaScript
+      </div>
+      <button type="button" class="btn btn-primary" id="modalCloseBtn">Close Demo Window</button>
+    </div>
+  </aside>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/miva-logo.svg" alt="MIVA Open University Logo" style="filter: brightness(0) invert(1); height: 38px; margin-bottom: 1rem;" />
+          <p>
+            COS 106: Introduction to Web Technologies Practical Term Project. 
+            Designed and developed as a responsive student academic portfolio and management system.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Course Information</h4>
+          <p style="font-size: 0.9rem; line-height: 1.8;">
+            <strong>Course:</strong> COS 106<br />
+            <strong>Institution:</strong> MIVA Open University<br />
+            <strong>Term:</strong> 2025/2026 Academic Session<br />
+            <strong>Location:</strong> Abuja, Nigeria
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> <strong>Momoh</strong> • MIVA Open University. All Rights Reserved. Built for COS 106 Term Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <!-- Inline category filtering script for Projects page -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const category = btn.getAttribute('data-category');
+
+          projectCards.forEach(card => {
+            const cardCategories = card.getAttribute('data-category') || '';
+            if (category === 'all' || cardCategories.includes(category)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134074"/>
+      <stop offset="100%" stop-color="#0B2545"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A896"/>
+      <stop offset="100%" stop-color="#02C39A"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8D5524"/>
+      <stop offset="100%" stop-color="#6F3F19"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Circular container background -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" stroke="url(#accentGrad)" stroke-width="8"/>
+  
+  <!-- Subtle tech grid pattern in background -->
+  <g opacity="0.12" stroke="#ffffff" stroke-width="1.5">
+    <circle cx="200" cy="200" r="150" fill="none"/>
+    <circle cx="200" cy="200" r="100" fill="none"/>
+    <line x1="50" y1="200" x2="350" y2="200"/>
+    <line x1="200" y1="50" x2="200" y2="350"/>
+  </g>
+  
+  <!-- Student Character Avatar -->
+  <g filter="url(#shadow)">
+    <!-- Shoulders / Blazer -->
+    <path d="M 100 370 Q 200 330 300 370 L 300 390 L 100 390 Z" fill="#1D3557"/>
+    <path d="M 155 338 L 200 385 L 245 338" fill="#F8F9FA"/>
+    <polygon points="190,340 210,340 205,385 195,385" fill="#E63946"/>
+    
+    <!-- Neck -->
+    <rect x="175" y="240" width="50" height="60" rx="8" fill="url(#skinGrad)"/>
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="180" rx="65" ry="78" fill="url(#skinGrad)"/>
+    
+    <!-- Hair -->
+    <path d="M 130 170 Q 130 95 200 95 Q 270 95 270 170 Q 260 115 200 112 Q 140 115 130 170 Z" fill="#1A1110"/>
+    
+    <!-- Eyebrows -->
+    <path d="M 160 145 Q 175 140 188 146" stroke="#1A1110" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 212 146 Q 225 140 240 145" stroke="#1A1110" stroke-width="4" stroke-linecap="round" fill="none"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="174" cy="162" rx="7" ry="5" fill="#FFFFFF"/>
+    <circle cx="174" cy="162" r="3.5" fill="#1A1110"/>
+    <ellipse cx="226" cy="162" rx="7" ry="5" fill="#FFFFFF"/>
+    <circle cx="226" cy="162" r="3.5" fill="#1A1110"/>
+    
+    <!-- Smart Glasses -->
+    <rect x="150" y="148" width="46" height="30" rx="7" fill="none" stroke="#00A896" stroke-width="3.5"/>
+    <rect x="204" y="148" width="46" height="30" rx="7" fill="none" stroke="#00A896" stroke-width="3.5"/>
+    <line x1="196" y1="160" x2="204" y2="160" stroke="#00A896" stroke-width="3.5"/>
+    <line x1="140" y1="156" x2="150" y2="156" stroke="#00A896" stroke-width="3"/>
+    <line x1="250" y1="156" x2="260" y2="156" stroke="#00A896" stroke-width="3"/>
+
+    <!-- Nose -->
+    <path d="M 197 172 Q 200 190 205 188" stroke="#5A3210" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Smile -->
+    <path d="M 182 208 Q 200 225 218 208" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- Verified Student Badge -->
+  <g transform="translate(290, 275)" filter="url(#shadow)">
+    <circle cx="28" cy="28" r="26" fill="#00A896" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M 18 28 L 25 35 L 39 20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

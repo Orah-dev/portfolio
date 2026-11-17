@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 70" width="260" height="70">
+  <defs>
+    <linearGradient id="mRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#C1121F"/>
+    </linearGradient>
+    <linearGradient id="mBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D3557"/>
+      <stop offset="100%" stop-color="#0B2545"/>
+    </linearGradient>
+  </defs>
+  <!-- M-shaped ribbon emblem -->
+  <g transform="translate(10, 5)">
+    <polygon points="5,50 20,10 32,30 22,50" fill="url(#mRed)" />
+    <polygon points="40,50 28,30 40,10 55,50" fill="url(#mBlue)" />
+    <polygon points="20,10 30,26 40,10 30,17" fill="#F4A261" opacity="0.9" />
+  </g>
+  <!-- University Typography -->
+  <text x="75" y="32" font-family="'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="24" font-weight="900" letter-spacing="3" fill="#0B2545">MIVA</text>
+  <text x="75" y="48" font-family="'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="9" font-weight="600" letter-spacing="2" fill="#6C757D">OPEN UNIVERSITY</text>
+  <text x="75" y="58" font-family="'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="7.5" font-weight="500" letter-spacing="1" fill="#00A896">COS 106 WEB TECHNOLOGIES</text>
+</svg>
